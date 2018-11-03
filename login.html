@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Stream2Play| Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<div id="branding">
+<h1>Stream2Play</h1>
+</div>
+<nav>
+<ul>
+<li class="current"><a href="home.html">Home</a></li>
+<li class="current"><a href="about.html"></a></li>
+<li class="current"><a href="support.html"></a></li>
+<li class="current"><a href="register.html">Register</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<form id="Form" method="POST" action="login.php">
+<div class="row">
+        <label class="required" for="name">Username:</label><br />
+        <input id="uname" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="uname" ></span>
+      </div>
+      <div class="row">
+        <label class="required" for="email">Password</label><br />
+        <input id="paaswd" class="input" name="password" type="password" value="" size="30" /><br />
+        <span id="passwd" class="error_message"></span>
+      </div>
+      <p><input type="Submit" value="Login"></p>
+</form>
+</body>
+<footer>
+        <p>StreamToPlay, Copyright &copy; 2018</p>
+        </footer>
+</html>

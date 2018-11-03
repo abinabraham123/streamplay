@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset = "utf-8"> 
+<meta name="viewport" content="width=device-width">
+
+<title>Stream2Play | Home</title>
+<link rel="stylesheet" href="stylea.css">
+
+
+</head>
+
+<body>
+<header>
+
+<div class = "container">
+<div  id = "branding">
+
+<h1> Stream2Play <h1>
+</div>
+
+<nav>
+<ul>
+
+<li><a href="home.html">Home</a></li>
+<li><a href="videos.html">Videos</a></li>
+<li><a href="streams.html">Streams</a></li>
+<li><a href="register.html">Sign Up</a></li>
+
+
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+<section id="showcase">
+<div class="container">
+  
+  <img class="mySlides" src="./images/pubg.jpg" style="width:100%">
+  <img class="mySlides" src="./images/dota.jpg" style="width:100%">
+  <img class="mySlides" src="./images/csgo.jpg" style="width:100%">
+  <img class="mySlides" src="./images/rainbowsix.jpg" style="width:100%">
+<img class="mySlides" src="./images/gta.jpg" style="width:100%">
+
+  <p><font size = "10" font face="bookman" color="gold"><b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Trending Games on Our Platform</b></font></p>
+  </div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+</section>
+
+<section id ="showcase1">
+<div class = "container">
+<h1> SYSTEM REQUIREMENTS</h1>
+<p><font color ="white"><b>OS: Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1<br>
+Processor: Intel Core i5 3470 @ 3.2GHZ (4 CPUs) / AMD X8 FX-8350 @ 4GHZ (8 CPUs)<br>
+Memory: 8GB<br>
+Video Card: NVIDIA GTX 660 2GB / AMD HD7870 2GB<br>
+Storage: 10GB </b></font>
+</div>
+</section>
+
+<section id="showcase2">
+<div class="container">
+
+
+  <img class="mySlides1" src="./images2/nvidia.jpg" style="width:100%">
+  <img class="mySlides1" src="./images2/monster.jpg" style="width:100%">
+  <img class="mySlides1" src="./images2/intel.jpg" style="width:100%">
+  <img class="mySlides1" src="./images2/ubisoft.jpg" style="width:100%">
+  
+   <p><font size = "10" font face="bookman" color="gold"><b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Our Supporting Partners</b></font></p>
+</div>
+<script>
+var myIndex1 = 0;
+carousel1();
+
+function carousel1() {
+    var a;
+    var b = document.getElementsByClassName("mySlides1");
+    for (a = 0; a < b.length; a++) {
+       b[a].style.display = "none";  
+    }
+    myIndex1++;
+    if (myIndex1 > b.length) {myIndex1 = 1}    
+    b[myIndex1-1].style.display = "block";  
+    setTimeout(carousel1, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+</section>
+
+<footer>
+<p> Stream2Play, Copyright &copy; 2019 </p>
+</footer>
+
+
+</body>
+
+
+
+</html>
